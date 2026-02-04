@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | GroundSite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Space+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">GroundSite</div>
+        <div class="tabs">
+          <a href="index.html">Home</a>
+          <a href="downloads.html">Modpacks</a>
+          <a href="media.html">Media</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>
+            Hello, I am <span class="highlight">[Your Name]</span>.
+          </h1>
+          <p>
+            [About me placeholder] Add a quick intro here. Mention what you build,
+            what you love playing, or any community goals you have.
+          </p>
+          <div class="stats">
+            <div class="stat">
+              <h3>Home Base</h3>
+              <p class="muted">[City / Region]</p>
+            </div>
+            <div class="stat">
+              <h3>Main Projects</h3>
+              <p class="muted">[Placeholder list of projects]</p>
+            </div>
+            <div class="stat">
+              <h3>Contact</h3>
+              <p class="muted">[Email / Discord / Link]</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="bits-field">
+            <canvas id="bits-canvas"></canvas>
+            <div class="bits-info">
+              <h2>Reactive Bits</h2>
+              <p class="muted">
+                Hover inside this field to stir the particles. Anime.js powers
+                the motion, and the canvas gives it that reactive feel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <h2 class="section-title">Quick Highlights</h2>
+      <div class="download-grid">
+        <div class="card">
+          <h3>Modpack Ready</h3>
+          <p class="muted">
+            Jump straight to the modpack downloads, with clear descriptions and
+            version notes.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Media Drops</h3>
+          <p class="muted">
+            Post screenshots, clips, and art to the media page. Drag new files
+            into the folder, update the JSON list, and they show up.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Built for Homelab</h3>
+          <p class="muted">
+            Deploy with Docker on port 2026 and keep everything self-hosted.
+          </p>
+        </div>
+      </div>
+
+      <p class="footer-note">
+        Update the placeholders in this page once you have your final About Me
+        copy. Everything else is ready to go.
+      </p>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
