@@ -36,9 +36,7 @@ export default function App() {
         <section className="panel">
           <h1>Modpack Downloads</h1>
           <p className="muted">
-            Drop your zip files into <strong>public/downloads</strong> and keep
-            the file names exactly as <strong>modpack1.zip</strong> and
-            <strong>modpack2.zip</strong>.
+            My modpacks!
           </p>
 
           <div className="grid" style={{ marginTop: "28px" }}>
@@ -115,7 +113,7 @@ export default function App() {
       <section className="hero">
         <div>
           <h1>
-            Hello, I am <span className="highlight">[Your Name]</span>.
+            Hello, I am <span className="highlight">Jonah V</span>.
           </h1>
           <p>
             Hi im jonah! I enjoy playing modded minecraft, the finals, factorio and other games!
