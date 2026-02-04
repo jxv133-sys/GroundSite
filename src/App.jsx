@@ -35,6 +35,11 @@ export default function App() {
       return (
         <section className="panel">
           <h1>Modpack Downloads</h1>
+          <p className="muted">
+            Drop your zip files into <strong>public/downloads</strong> and keep
+            the file names exactly as <strong>modpack1.zip</strong> and
+            <strong>modpack2.zip</strong>.
+          </p>
 
           <div className="grid" style={{ marginTop: "28px" }}>
             <div className="card download-card">
@@ -60,12 +65,18 @@ export default function App() {
       return (
         <section className="panel">
           <h1>Media Library</h1>
-
-         
+          <p className="muted">
+            Upload images or videos into <strong>public/media</strong> and list
+            them in <strong>public/media/media.json</strong>.
+          </p>
+          <p className="muted">
+            Video tip: use H.264/AAC in an <code>.mp4</code> or <code>.webm</code>
+            container for best browser support.
+          </p>
 
           <div className="media-grid" style={{ marginTop: "28px" }}>
             {mediaItems.length === 0 && (
-              <p className="muted">Misc projects here!.</p>
+              <p className="muted">Add items to media.json to show uploads.</p>
             )}
             {mediaItems.map((item) => {
               const ext = item.src.split(".").pop().toLowerCase();
@@ -109,7 +120,7 @@ export default function App() {
       <section className="hero">
         <div>
           <h1>
-            Hi, I am <span className="highlight">Jonah V</span>.
+            Hello, I am <span className="highlight">[Your Name]</span>.
           </h1>
           <p>
             Hi im jonah! I enjoy playing modded minecraft, the finals, factorio and other games!
@@ -120,13 +131,26 @@ export default function App() {
               <p className="muted">Pennsylvania</p>
             </div>
             <div className="stat">
-             <ul className="muted">
-              <li>Switch from Beziel to Uptime Kuma</li>
-              <li>Jellyfin media server</li>
-              <li>Yacht for docker containers</li>
-              <li>Local VPN Headscale</li>
-              <li>minecraft-docker-manager</li>
-            </ul>
+              <h3>Projects</h3>
+              <ul className="muted-list">
+                <li>Homelab projects</li>
+                <li>Docker containers</li>
+                <li>Minecraft servers</li>
+                <li>Server health monitor</li>
+                <li>Video editing (for fun)</li>
+                <li>Basics of Blender</li>
+              </ul>
+              <p className="muted" style={{ marginTop: "12px" }}>
+                Planned projects:
+              </p>
+              <ul className="muted-list">
+                <li>Switch from Beziel to Uptime Kuma</li>
+                <li>Jellyfin media server</li>
+                <li>Yacht for docker containers</li>
+                <li>Local VPN Headscale</li>
+                <li>minecraft-docker-manager</li>
+              </ul>
+            </div>
             <div className="stat">
               <h3>Contact</h3>
               <p className="muted">jxv133@gmail.com</p>
@@ -134,15 +158,13 @@ export default function App() {
           </div>
         </div>
         <div className="card">
-        <h2>Projects</h2>
-        <ul className="muted">
-          <li>Homelab projects</li>
-          <li>Docker containers</li>
-          <li>Minecraft servers</li>
-          <li>Server health monitor</li>
-        </ul>
+          <h2>Interactive Background</h2>
+          <p className="muted">
+            Subtle particles float behind the content for a calm, reactive vibe.
+          </p>
         </div>
       </section>
+    );
   }, [activeTab, mediaItems]);
 
   return (
@@ -167,8 +189,6 @@ export default function App() {
 
       <main>
         {content}
-        <p className="footer-note">
-        </p>
       </main>
     </div>
   );
