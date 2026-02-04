@@ -120,8 +120,13 @@ export default function App() {
               <p className="muted">Pennsylvania</p>
             </div>
             <div className="stat">
-              <h3>Main Projects</h3>
-              <p className="muted">Homelab projects: Docker containers, minecraft servers, server health moniter, and I have more planned! I do video editing for fun and know the basics of blender. </p>
+              <h3>Planned projects:</h3>
+              <p className="muted">                
+                -Switch from Beziel to Uptime Kuma
+                -Jellyfin media server
+                -Yacht for docker containers
+                -Local VPN Headscale 
+                -minecraft-docker-manager </p>
             </div>
             <div className="stat">
               <h3>Contact</h3>
@@ -130,9 +135,12 @@ export default function App() {
           </div>
         </div>
         <div className="card">
-          <h2>Interactive Background</h2>
+          <h2>Projects</h2>
           <p className="muted">
-            Subtle particles float behind the content for a calm, reactive vibe.
+            Homelab projects: 
+            Docker containers
+            minecraft servers
+            server health moniter
           </p>
         </div>
       </section>
