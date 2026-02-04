@@ -1,0 +1,7 @@
+services:
+  groundsite:
+    build: .
+    container_name: groundsite
+    ports:
+      - "2026:2026"
+    restart: unless-stopped

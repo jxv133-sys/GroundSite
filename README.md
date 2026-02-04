@@ -1,11 +1,21 @@
 # GroundSite
 
-Static interactive site powered by anime.js with a simple media gallery and modpack downloads.
+React + Vite site with modpack downloads, media gallery, and a canvas-based interactive background.
+
+## Install dependencies
+```bash
+npm install
+```
+
+## Run locally
+```bash
+npm run dev
+```
 
 ## Update content
-- Home page: edit placeholders in `index.html`.
-- Modpacks: replace `downloads/modpack1.zip` and `downloads/modpack2.zip` with your actual files.
-- Media: drop files in `media/` and list them in `media/media.json`.
+- Home page: edit placeholders in `src/App.jsx`.
+- Modpacks: replace `public/downloads/modpack1.zip` and `public/downloads/modpack2.zip` with your actual files.
+- Media: drop files in `public/media/` and list them in `public/media/media.json`.
 
 Example media entry:
 ```json
@@ -24,4 +34,9 @@ docker build -t groundsite .
 Run on port 2026:
 ```bash
 docker run --rm -p 2026:2026 groundsite
+```
+
+## Docker Compose
+```bash
+docker compose up -d --build
 ```
