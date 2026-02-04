@@ -83,20 +83,25 @@ export default function App() {
               const isVideo = ["mp4", "webm", "ogg", "mov"].includes(ext);
               return (
                 <div className="media-card" key={item.src}>
-                  {isVideo ? (
-                    <video
-                      src={`/${item.src}`}
-                      controls
-                      playsInline
-                      preload="metadata"
-                      onError={(event) => {
-                        const target = event.currentTarget;
-                        target.setAttribute("data-error", "true");
-                      }}
-                    />
-                  ) : (
-                    <img src={`/${item.src}`} alt={item.title || "Media item"} />
-                  )}
+                  <div className="media-frame">
+                    {isVideo ? (
+                      <video
+                        src={`/${item.src}`}
+                        controls
+                        playsInline
+                        preload="metadata"
+                        onError={(event) => {
+                          const target = event.currentTarget;
+                          target.setAttribute("data-error", "true");
+                        }}
+                      />
+                    ) : (
+                      <img
+                        src={`/${item.src}`}
+                        alt={item.title || "Media item"}
+                      />
+                    )}
+                  </div>
                   <div className="media-body">
                     <strong>{item.title || "Untitled"}</strong>
                     <p className="muted">
