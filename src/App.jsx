@@ -43,15 +43,15 @@ export default function App() {
 
           <div className="grid" style={{ marginTop: "28px" }}>
             <div className="card download-card">
-              <h2>Modpack 1</h2>
-              <p className="muted">[Description placeholder for Modpack 1]</p>
+              <h2>Modpack 1 (forge - 1.20.1)</h2>
+              <p className="muted">Somthing is wrong with the world...</p>
               <a href="/downloads/modpack1.zip" download>
                 Download Modpack 1
               </a>
             </div>
             <div className="card download-card">
-              <h2>Modpack 2</h2>
-              <p className="muted">[Description placeholder for Modpack 2]</p>
+              <h2>Modpack 2 (forge - 1.20.1)</h2>
+              <p className="muted">GroundFarm modpack, RPG based. Create mod and farmer delights! Lots of structures.</p>
               <a href="/downloads/modpack2.zip" download>
                 Download Modpack 2
               </a>
@@ -105,21 +105,20 @@ export default function App() {
             Hello, I am <span className="highlight">[Your Name]</span>.
           </h1>
           <p>
-            [About me placeholder] Add a quick intro here. Mention what you
-            build, what you love playing, or any community goals you have.
+            Hi im jonah! I enjoy playing modded minecraft, the finals, factorio and other games!
           </p>
           <div className="stats">
             <div className="stat">
               <h3>Home Base</h3>
-              <p className="muted">[City / Region]</p>
+              <p className="muted">Pennsylvania</p>
             </div>
             <div className="stat">
               <h3>Main Projects</h3>
-              <p className="muted">[Placeholder list of projects]</p>
+              <p className="muted">Homelab projects: Docker containers, minecraft servers, server health moniter, and I have more planned! I do video editing for fun and know the basics of blender. </p>
             </div>
             <div className="stat">
               <h3>Contact</h3>
-              <p className="muted">[Email / Discord / Link]</p>
+              <p className="muted">jxv133@gmail.com</p>
             </div>
           </div>
         </div>
@@ -156,8 +155,6 @@ export default function App() {
       <main>
         {content}
         <p className="footer-note">
-          Update placeholders once your About Me copy and modpack notes are
-          ready.
         </p>
       </main>
     </div>
