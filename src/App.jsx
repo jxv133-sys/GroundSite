@@ -120,14 +120,13 @@ export default function App() {
               <p className="muted">Pennsylvania</p>
             </div>
             <div className="stat">
-              <h3>Planned projects:</h3>
-              <p className="muted">                
-                -Switch from Beziel to Uptime Kuma
-                -Jellyfin media server
-                -Yacht for docker containers
-                -Local VPN Headscale 
-                -minecraft-docker-manager </p>
-            </div>
+             <ul className="muted">
+              <li>Switch from Beziel to Uptime Kuma</li>
+              <li>Jellyfin media server</li>
+              <li>Yacht for docker containers</li>
+              <li>Local VPN Headscale</li>
+              <li>minecraft-docker-manager</li>
+            </ul>
             <div className="stat">
               <h3>Contact</h3>
               <p className="muted">jxv133@gmail.com</p>
@@ -135,13 +134,13 @@ export default function App() {
           </div>
         </div>
         <div className="card">
-          <h2>Projects</h2>
-          <p className="muted">
-            Homelab projects: 
-            Docker containers
-            minecraft servers
-            server health moniter
-          </p>
+        <h2>Projects</h2>
+        <ul className="muted">
+          <li>Homelab projects</li>
+          <li>Docker containers</li>
+          <li>Minecraft servers</li>
+          <li>Server health monitor</li>
+        </ul>
         </div>
       </section>
     );
