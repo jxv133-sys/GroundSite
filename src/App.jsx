@@ -35,11 +35,6 @@ export default function App() {
       return (
         <section className="panel">
           <h1>Modpack Downloads</h1>
-          <p className="muted">
-            Drop your zip files into <strong>public/downloads</strong> and keep
-            the file names exactly as <strong>modpack1.zip</strong> and
-            <strong>modpack2.zip</strong>.
-          </p>
 
           <div className="grid" style={{ marginTop: "28px" }}>
             <div className="card download-card">
@@ -65,18 +60,12 @@ export default function App() {
       return (
         <section className="panel">
           <h1>Media Library</h1>
-          <p className="muted">
-            Upload images or videos into <strong>public/media</strong> and list
-            them in <strong>public/media/media.json</strong>.
-          </p>
-          <p className="muted">
-            Video tip: use H.264/AAC in an <code>.mp4</code> or <code>.webm</code>
-            container for best browser support.
-          </p>
+
+         
 
           <div className="media-grid" style={{ marginTop: "28px" }}>
             {mediaItems.length === 0 && (
-              <p className="muted">Add items to media.json to show uploads.</p>
+              <p className="muted">Misc projects here!.</p>
             )}
             {mediaItems.map((item) => {
               const ext = item.src.split(".").pop().toLowerCase();
@@ -120,7 +109,7 @@ export default function App() {
       <section className="hero">
         <div>
           <h1>
-            Hello, I am <span className="highlight">[Your Name]</span>.
+            Hi, I am <span className="highlight">Jonah V</span>.
           </h1>
           <p>
             Hi im jonah! I enjoy playing modded minecraft, the finals, factorio and other games!
