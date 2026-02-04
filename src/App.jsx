@@ -69,6 +69,10 @@ export default function App() {
             Upload images or videos into <strong>public/media</strong> and list
             them in <strong>public/media/media.json</strong>.
           </p>
+          <p className="muted">
+            Video tip: use H.264/AAC in an <code>.mp4</code> or <code>.webm</code>
+            container for best browser support.
+          </p>
 
           <div className="media-grid" style={{ marginTop: "28px" }}>
             {mediaItems.length === 0 && (
@@ -76,11 +80,20 @@ export default function App() {
             )}
             {mediaItems.map((item) => {
               const ext = item.src.split(".").pop().toLowerCase();
-              const isVideo = ["mp4", "webm", "ogg"].includes(ext);
+              const isVideo = ["mp4", "webm", "ogg", "mov"].includes(ext);
               return (
                 <div className="media-card" key={item.src}>
                   {isVideo ? (
-                    <video src={`/${item.src}`} controls />
+                    <video
+                      src={`/${item.src}`}
+                      controls
+                      playsInline
+                      preload="metadata"
+                      onError={(event) => {
+                        const target = event.currentTarget;
+                        target.setAttribute("data-error", "true");
+                      }}
+                    />
                   ) : (
                     <img src={`/${item.src}`} alt={item.title || "Media item"} />
                   )}
