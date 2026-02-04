@@ -158,9 +158,9 @@ export default function App() {
           </div>
         </div>
         <div className="card">
-          <h2>Interactive Background</h2>
+          <h2>Whats this site for?</h2>
           <p className="muted">
-            Subtle particles float behind the content for a calm, reactive vibe.
+            Portfolio, modpack downloads for modded servers I host, and project archive!
           </p>
         </div>
       </section>
