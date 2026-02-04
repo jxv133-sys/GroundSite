@@ -143,7 +143,6 @@ export default function App() {
         </ul>
         </div>
       </section>
-    );
   }, [activeTab, mediaItems]);
 
   return (
