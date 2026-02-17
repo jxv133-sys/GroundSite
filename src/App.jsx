@@ -113,7 +113,7 @@ export default function App() {
       <section className="hero">
         <div>
           <h1>
-            Hello, I am <span className="highlight">Jonah V</span>.
+            Page made by <span className="highlight">Jonah V</span>.
           </h1>
           <p>
             Hi im jonah! I enjoy playing modded minecraft, the finals, factorio and other games!
@@ -137,16 +137,13 @@ export default function App() {
                 Planned projects:
               </p>
               <ul className="muted-list">
-                <li>Switch from Beziel to Uptime Kuma</li>
                 <li>Jellyfin media server</li>
-                <li>Yacht for docker containers</li>
                 <li>Local VPN Headscale</li>
-                <li>minecraft-docker-manager</li>
               </ul>
             </div>
             <div className="stat">
               <h3>Contact</h3>
-              <p className="muted">jxv133@gmail.com</p>
+              <p className="muted">  </p>
             </div>
           </div>
         </div>
